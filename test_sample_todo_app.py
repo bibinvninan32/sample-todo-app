@@ -14,6 +14,7 @@ capabilities = {
     "tunnel" : True
 }
 driver = webdriver.Remote(
+    desired_capabilities= capabilities,
     command_executor= url
 )
 driver.get("http://localhost:8081/")
