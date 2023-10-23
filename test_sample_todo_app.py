@@ -4,7 +4,7 @@ import os
 import json
 
 url = os.getenv("LT_HUB_URL")
-"""capabilities = {
+capabilities = {
     "build" : os.getenv("LT_BUILD_NAME"),
     "name" : "Quick Test",
     "platform" : "Windows 10",
@@ -12,7 +12,7 @@ url = os.getenv("LT_HUB_URL")
     "version" : "88.0",
     "resolution" : "1920x1080",
     "tunnel" : True
-}"""
+}
 driver = webdriver.Remote(
     command_executor= url
 )
